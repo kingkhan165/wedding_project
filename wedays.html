@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="wedays.css" />
+    <script src="wedays.js" defer></script>
+    <title>Wedays</title>
+  </head>
+  <body>
+    <!--------------------------////
+                                    ******************* "HEADER" STRUCTURE OF WEBSITE START HERE *******************
+                                                                                                                ////-------------------------->
+    <header>
+      <!-- <video src="wed-vid1.mp4" controls autoplay loop></video> -->
+
+      <video autoplay muted loop play-inline>
+        <source src="wed-vid2.mp4" type="video/mp4" />
+      </video>
+
+      <nav class="nav-bar">
+        <h1 class="nav-bar-h1">Wedays</h1>
+
+        <!----------////////// Here "NAV-LIST" Is Start's //////////---------->
+        <ul class="ul">
+          <a href="wedays.html"><li>Home</li></a>
+          <li style="cursor: pointer">
+            Gallery
+            <ul>
+              <a href="our video.html">
+                <li>See Our Wedding's Videos</li>
+              </a>
+              <hr style="margin-top: 10px; color: rgba(0, 0, 0, 0.233)" />
+              <a href="insta.html">
+                <li>See Our Instagram</li>
+              </a>
+            </ul>
+          </li>
+          <a href="Packeges.html"><li>Packeges</li></a>
+          <a href="#"><li>Smjk</li></a>
+        </ul>
+        <!----------////////// "NAV-LIST" Ended //////////---------->
+
+        <!----------////////// Here "SEARCH-BAR" Is Start's //////////---------->
+        <div class="container" id="container1">
+          <a href="#">
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </a>
+          <input type="search" class="search" id="" />
+        </div>
+        <!----------////////// "SEARCH-BAR" Ended //////////---------->
+
+        <!----------////////// Here "TOGGLE AND MOBILE-VEIW LIST" Is Start's //////////---------->
+        <div class="veiw-bars" onclick="display()">
+          <i class="fa-solid fa-bars"></i>
+        </div>
+
+        <div class="view-bar-list-nav" id="view_bar">
+          <h1 class="view-bar-list-nav-h1">Wedays</h1>
+
+          <ul>
+            <a href="wedays.html" style="margin: auto"
+              ><li class="one">Home</li></a
+            >
+            <hr />
+            <a href="insta.html" style="margin: auto"><li>Gallery</li></a>
+            <hr />
+            <a href="Packeges.html" style="margin: auto"><li>Packeges</li></a>
+            <hr />
+            <a href="#" style="margin: auto"><li>Smjk</li></a>
+            <hr />
+          </ul>
+
+          <!----------////////// Here "SEARCH-BAR" Is Start's //////////---------->
+          <div class="container" id="container2">
+            <a href="#">
+              <i class="fa-solid fa-magnifying-glass"></i>
+            </a>
+            <input type="search" class="search" id="" />
+          </div>
+          <div class="mul" onclick="display()">
+            <i class="fa-solid fa-multiply"></i>
+          </div>
+        </div>
+        <!----------////////// "TOGGLE AND MOBILE-VEIW LIST" Ended //////////---------->
+      </nav>
+    </header>
+
+    <!--------------------------////
+                                ******************* "BODY" STRUCTURE OF WEBSITE START HERE *******************
+                                                                                                          ////-------------------------->
+    <div class="body">
+      <a href="contact us.html"
+        ><button class="btn1">💘Capture Moment With Us</button></a
+      >
+      <h1 class="main-heading1">The Smarter Way To</h1>
+      <h1 class="main-heading2">Plan Your Big Day.</h1>
+      <p>
+        Experience wedding planning the way it should be <br />
+        --intuitive, thoughtful, and personal
+      </p>
+      <a href="our video.html"
+        ><button class="btn2">
+          Watch Our Wedding<i class="fa-solid fa-play-circle"></i></button
+      ></a>
+    </div>
+  </body>
+</html>

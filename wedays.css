@@ -1,0 +1,307 @@
+/* ******************
+                     <<<<<<<<<<<<------------"GLOBAL" CSS IS START'S HERE------------>>>>>>>>>>>>
+                                                                                                 ****************** */
+
+@import url("https://fonts.googleapis.com/css2?family=Comfortaa&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Comfortaa", cursive;
+}
+
+body {
+  background-color: black;
+  color: whitesmoke;
+}
+
+body::-webkit-scrollbar {
+  width: 10px;
+  border-radius: 20px;
+  background-color: palevioletred;
+}
+
+body::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background-color: pink;
+}
+
+::selection {
+  background-color: rgba(0, 0, 0, 0.233);
+  color: pink;
+}
+
+/* ******************
+                     <<<<<<<<<<<<------------"HEADER" CSS IS START'S HERE------------>>>>>>>>>>>>
+                                                                                                 ****************** */
+
+/******* "VIDEO" tag of "Header" is starts here *******/
+video {
+  position: fixed;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.6;
+  /* margin-top: -8px; */
+}
+
+/******* "NAV" tag of "Header" is starts here *******/
+.nav-bar h1 {
+  background-color: rgba(0, 0, 0, 0.233);
+  border: 1px solid rgba(0, 0, 0, 0.233);
+  padding: 12px;
+  height: 50px;
+  border-radius: 50px;
+  cursor: default;
+  transition: 1s ease;
+}
+
+.nav-bar h1:hover,
+.nav-bar i:hover {
+  color: rgba(255, 136, 156, 0.856);
+}
+
+.nav-bar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 15px;
+}
+
+.nav-bar ul li {
+  float: left;
+  font-size: 16px;
+  margin-left: 20px;
+  margin-right: 30px;
+  margin-top: 12px;
+  color: whitesmoke;
+  transition: 1s ease;
+}
+
+.nav-bar ul li:hover {
+  color: rgba(255, 136, 156, 0.856);
+  text-decoration: underline;
+}
+
+.nav-bar ul li ul {
+  background-color: rgba(0, 0, 0, 0.233);
+  border: 1px solid rgba(0, 0, 0, 0.233);
+  padding: 10px;
+  margin-left: -60px;
+  display: none;
+}
+
+.nav-bar ul li:hover > ul {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+}
+
+.nav-bar ul li i {
+  font-size: 14px;
+  position: relative;
+  bottom: 2px;
+}
+
+/******* "SEARCH-BAR" of "NAV" tag of "Header" is starts here *******/
+.container,
+.veiw-bars,
+.mul {
+  width: 40px;
+  height: 40px;
+  margin-top: 10px;
+  background-color: rgba(0, 0, 0, 0.233);
+  border: 1px solid rgba(0, 0, 0, 0.233);
+  border-radius: 50px;
+  display: flex;
+  transition: 2s ease-in-out;
+}
+
+.container:hover {
+  width: 200px;
+}
+
+.search {
+  background: none;
+  outline: none;
+  border: none;
+  position: relative;
+  top: 6px;
+  left: 10px;
+  height: 25px;
+  width: 80%;
+  overflow: hidden;
+  color: pink;
+}
+
+.container a i {
+  color: whitesmoke;
+}
+.container i,
+.veiw-bars i,
+.mul i {
+  font-size: 25px;
+  margin-top: 6px;
+  margin-left: 8px;
+  width: 20px;
+  transition: 1s ease;
+  cursor: pointer;
+}
+
+.container i:hover {
+  color: rgba(255, 136, 156, 0.856);
+}
+
+/******* "VEIW-BAR & TOGGLE AND MOBILE-VEIW LIST" of "NAV" tag of "Header" is starts here *******/
+.veiw-bars {
+  display: none;
+}
+
+.view-bar-list-nav {
+  position: absolute;
+  right: 1px;
+  top: 1px;
+  width: 100%;
+  height: 163%;
+  margin: auto;
+  justify-content: center;
+  border: 3px solid black;
+  background-color: rgba(24, 23, 23, 0.979);
+  display: none;
+}
+
+.view-bar-list-nav h1 {
+  width: 110px;
+  margin: auto;
+  margin-top: 150px;
+  border: 1px solid black;
+}
+
+/******* "MOBILE-VEIW LIST and SECOND NAV-UL" of "NAV" tag of "Header" is starts here *******/
+.view-bar-list-nav ul {
+  display: grid;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+}
+
+.view-bar-list-nav ul li {
+  margin-top: 50px;
+  text-align: center;
+  text-decoration: none;
+}
+
+.view-bar-list-nav ul li:hover {
+  text-decoration: none;
+}
+
+hr {
+  opacity: 1;
+  transition: 1s ease;
+}
+
+/******* "MOBILE-VEIW SEARCH-BAR" of "NAV" tag of "Header" is starts here *******/
+.view-bar-list-nav .container {
+  width: 200px;
+  margin: auto;
+  margin-top: 20px;
+  border: 1px solid black;
+}
+
+.view-bar-list-nav .mul {
+  margin: auto;
+  margin-top: 20px;
+}
+
+.view-bar-list-nav .mul i {
+  margin-left: 12px;
+}
+
+/* ******************
+                     <<<<<<<<<<<<------------"BODY" CSS IS START'S HERE------------>>>>>>>>>>>>
+                                                                                               ****************** */
+.body {
+  /* background-color: aqua; */
+  padding: 8.5%;
+  display: grid;
+  justify-content: center;
+  text-align: center;
+}
+
+.body .btn1 {
+  outline: none;
+  width: 42%;
+  color: whitesmoke;
+  background-color: rgba(0, 0, 0, 0.233);
+  border: 1px solid rgba(0, 0, 0, 0.233);
+  padding: 10px;
+  border-radius: 50px;
+  transition: 1s ease;
+  margin: auto;
+  cursor: pointer;
+}
+
+.body .btn1:hover {
+  color: rgba(255, 136, 156, 0.856);
+}
+
+.body .main-heading1 {
+  margin-top: 40px;
+  font-size: 60px;
+  font-weight: 800;
+  cursor: default;
+}
+
+.body .main-heading1:hover,
+.body .main-heading2:hover {
+  -webkit-text-stroke: 0.1px palevioletred;
+  color: transparent;
+}
+
+.body .main-heading2 {
+  margin: 0%;
+  font-size: 60px;
+  font-weight: 800;
+  cursor: default;
+}
+
+.body p {
+  margin-top: 12px;
+}
+
+.body .btn2 {
+  background-color: rgba(255, 148, 166, 0.856);
+  border: 1px solid rgba(255, 148, 166, 0.856);
+  color: whitesmoke;
+  transition: 1s ease;
+  border-radius: 10px;
+  margin: auto;
+  margin-top: 60px;
+  padding: 12px;
+  width: 38%;
+  height: 60px;
+  cursor: pointer;
+}
+
+.body .btn2:hover {
+  background-color: rgba(255, 121, 143, 0.856);
+}
+
+.body .btn2 i {
+  margin-left: 10px;
+}
+
+/******* "MEDIA QUERY" is starts here *******/
+@media screen and (max-width: 700px) {
+  .nav-bar .ul {
+    display: none;
+  }
+  .nav-bar #container1 {
+    display: none;
+  }
+  .veiw-bars {
+    display: block;
+  }
+}

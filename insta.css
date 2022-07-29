@@ -1,0 +1,92 @@
+@import url("https://fonts.googleapis.com/css2?family=Comfortaa&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  box-sizing: border-box;
+  background-color: #3d3d44;
+  font-family: "Comfortaa", cursive;
+}
+
+body::-webkit-scrollbar {
+  width: 10px;
+  border-radius: 20px;
+  background-color: palevioletred;
+}
+
+body::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background-color: pink;
+}
+
+::selection {
+  background-color: rgba(0, 0, 0, 0.233);
+  color: pink;
+}
+
+.main-container {
+  margin-top: 60px;
+  margin-bottom: 60px;
+}
+
+h6 {
+  text-align: center;
+  outline: none;
+  width: 10%;
+  padding: 10px;
+  font-size: 14px;
+  border-radius: 50px;
+  transition: 1s ease;
+  margin: auto;
+  cursor: default;
+  color: whitesmoke;
+  background-color: rgba(0, 0, 0, 0.233);
+  border: 1px solid rgba(0, 0, 0, 0.233);
+}
+
+h6:hover {
+  color: pink;
+}
+
+h1 {
+  color: whitesmoke;
+  margin-top: 20px;
+  cursor: default;
+  font-size: 40px;
+}
+
+h1:hover {
+  -webkit-text-stroke: 0.1px palevioletred;
+  color: transparent;
+}
+
+p {
+  text-align: center;
+  color: whitesmoke;
+}
+
+.main {
+  background-color: palevioletred;
+  color: brown;
+}
+#instafeed-container {
+  padding: 100px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  align-items: baseline;
+  grid-gap: 20px;
+}
+
+a img {
+  border: 2px solid black;
+  border-radius: 20px;
+  width: 100%;
+}
+
+a img:hover {
+  opacity: 0.8;
+  background-image: url(flower.jpg);
+}

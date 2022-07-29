@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="contact us.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="container">
+      <h6>💸Get ln Touch With weday</h6>
+      <h1>
+        Subscribe For Information, And <br />
+        Never Miss A Great Offer
+      </h1>
+      <div class="btns">
+        <button class="btn1" onclick="display()">
+          Subscribe Us On SocailMedia
+        </button>
+        <button class="btn2">Contact Us</button>
+
+        <div class="socail-icon" id="socail_icon">
+          <div class="icons">
+            <div class="s-icon">
+              <i class="fa-brands fa-instagram"></i>
+              <i class="fa-brands fa-facebook"></i>
+              <i class="fa-brands fa-youtube"></i>
+              <i class="fa-brands fa-snapchat"></i>
+              <i class="fa-brands fa-whatsapp"></i>
+            </div>
+            <div class="x-icon" onclick="display()">
+              <i class="fa-solid fa-multiply"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      function display() {
+        icon = document.querySelector("#socail_icon");
+        if (icon.style.display == "none") {
+          icon.style.display = "block";
+        } else {
+          icon.style.display = "none";
+        }
+      }
+    </script>
+  </body>
+</html>
